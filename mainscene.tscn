@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://bvgn2ofcb603x"]
+
+[ext_resource type="Texture2D" uid="uid://bvkc3vvah2pfj" path="res://pixels/Bleremy/forward.png" id="1_wtdyi"]
+[ext_resource type="Texture2D" uid="uid://bh4kak1i07k0q" path="res://pixels/Bleremy/backwards.png" id="2_xtb1e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtb1e"]
+atlas = ExtResource("1_wtdyi")
+region = Rect2(63, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dn5c8"]
+atlas = ExtResource("1_wtdyi")
+region = Rect2(42, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lfti"]
+atlas = ExtResource("1_wtdyi")
+region = Rect2(21, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbvtr"]
+atlas = ExtResource("1_wtdyi")
+region = Rect2(0, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl65m"]
+atlas = ExtResource("2_xtb1e")
+region = Rect2(0, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76yo1"]
+atlas = ExtResource("2_xtb1e")
+region = Rect2(21, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bn17"]
+atlas = ExtResource("2_xtb1e")
+region = Rect2(42, 0, 21, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ftms"]
+atlas = ExtResource("2_xtb1e")
+region = Rect2(63, 0, 21, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fl65m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtb1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dn5c8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lfti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbvtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl65m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76yo1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bn17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ftms")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
+sprite_frames = SubResource("SpriteFrames_fl65m")
+frame_progress = 0.7172192
